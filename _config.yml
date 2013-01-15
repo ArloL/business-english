@@ -1,0 +1,4 @@
+title:  "Business English in Bocholt"
+description: "Mary O'Keeffe unterrichtet Business English im Umkreis Bocholt."
+exclude: [Gemfile, Gemfile.lock, Rakefile, business-english.sublime-project, business-english.sublime-workspace]
+markdown: kramdown
