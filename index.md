@@ -10,12 +10,6 @@ Im Berufsalltag sind Englisch-Kenntnisse heutzutage unentbehrlich. Oft fehlt abe
 
 Wir trainieren gemeinsam *Telefon- oder Verkaufsgespräche*, *Emails* schreiben, Hörverständnis und technische Vokabeln aus Ihrer Industrie. Und das alles bei Ihnen *vor Ort*; für Gruppen oder Einzelpersonen.
 
-## Erfolgsgeschichten
-
-### Hübers Verfahrenstechnik, Bocholt
-
-Im Januar 2012 hat mich der Geschäftsführer von Hübers Verfahrenstechnik um Business English für seine Mitarbeiter im Bereich Kundenbetreuung gebeten. Wir haben über einen Zeitraum von sechs Monaten einmal die Woche morgens um 7 Uhr für eine Stunde Vokabeln aus dem Bereich Verfahrenstechnik praktisch in Kundengesprächen eingesetzt und somit die Sprechsicherheit und das Selbstvertrauen der Mitarbeiter beim Englisch sprechen gestärkt.
-
 ## Wer bin ich?
 
 Ich bin gebürtige Irin und lebe nun seit 28 Jahren in Deutschland. Bereits seit 2000 unterrichte ich Englisch für die VHS. In 2010 habe ich mich dann selbstständig gemacht und biete neben Irland Reisen auch Business English Unterricht an.
