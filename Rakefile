@@ -3,6 +3,11 @@ require 'digest/md5'
 
 task :default => [:lessc]
 
+desc 'Watch Less'
+task :watch do
+  system('when-changed _less/* -c rake lessc')
+end
+
 desc 'Compile Less'
 task :lessc do
   rm Dir.glob('css/*.css')
