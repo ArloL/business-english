@@ -13,9 +13,9 @@ Wir trainieren gemeinsam *Telefon- oder Verkaufsgespräche*, *Emails* schreiben,
 
 ## Wer bin ich?
 
-Ich bin gebürtige Irin und lebe nun seit 28 Jahren in Deutschland. Bereits seit 2000 unterrichte ich Englisch für die VHS. In 2010 habe ich mich dann selbstständig gemacht und biete neben Irland Reisen auch Business English Unterricht an.
+Ich bin gebürtige Irin und lebe seit 28 Jahren in Deutschland. Bereits seit 2000 unterrichte ich nebenberuflich Englisch für die VHS. In 2010 habe ich mich dazu entschieden selbstständig <a href="http://abenteuer-irland.de">Irland Reisen</a> zu organisieren und auch Business English zu unterrichten.
 
-Seit 2010 bin ich anerkannte telc Prüferin.
+Seit 2010 bin ich anerkannte <a href="http://www.telc.net/">telc</a> Prüferin.
 
 ## Kontakt
 
