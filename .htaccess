@@ -333,7 +333,7 @@ FileETag None
 # performance impact: http://goo.gl/Mluzd
 
 <IfModule mod_rewrite.c>
-  Options +FollowSymlinks
+# Options +FollowSymlinks
 # Options +SymLinksIfOwnerMatch
   RewriteEngine On
 # RewriteBase /
@@ -421,7 +421,7 @@ FileETag None
 # same name does not exist.
 # webmasterworld.com/apache/3808792.htm
 
-Options -MultiViews
+# Options -MultiViews
 
 
 # ----------------------------------------------------------------------
@@ -458,7 +458,7 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
 # shouldn't allow everybody to surf through every folder on your server (which
 # includes rather private places like CMS system folders).
 <IfModule mod_autoindex.c>
-  Options -Indexes
+# Options -Indexes
 </IfModule>
 
 # Block access to "hidden" directories or files whose names begin with a
