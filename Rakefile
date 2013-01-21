@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'digest/md5'
+require 'rake/contrib/ftptools'
 
 task :default => [:lessc]
 
@@ -21,4 +22,14 @@ end
 desc 'Running Jekyll with --server --auto opition'
 task :dev do
   system('jekyll --server --auto')
+end
+
+task :upload => :lessc do
+	system('jekyll')
+	cd '_site' do
+  	Rake::FtpUploader.connect('/html/business-english', 'abenteuer-irland.de', 'web329', 'HlHHvtWX') do |ftp|
+    	ftp.verbose = true # gives you some output
+    	ftp.upload_files("./**/*")
+  	end
+	end
 end
