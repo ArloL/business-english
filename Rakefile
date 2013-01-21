@@ -6,6 +6,7 @@ task :default => [:lessc]
 desc 'Compile Less'
 task :lessc do
   rm Dir.glob('css/*.css')
+  mkdir_p 'css'
   system('lessc --yui-compress "_less/main.less" > "css/intermediate.css"')
   hash = Digest::MD5.file('css/intermediate.css').hexdigest()
   mv 'css/intermediate.css', 'css/'+hash+'.css'
