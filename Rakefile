@@ -30,6 +30,7 @@ task :upload => :lessc do
   	Rake::FtpUploader.connect('/html/business-english', 'abenteuer-irland.de', 'web329', 'HlHHvtWX') do |ftp|
     	ftp.verbose = true # gives you some output
     	ftp.upload_files("./**/*")
+      ftp.upload_files(".htaccess")
   	end
 	end
 end
