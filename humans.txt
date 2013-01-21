@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    CEO: Mary O'Keeffe, mok@abenteuer.irland.de
+    Webmaster: Arlo O'Keeffe, mailtoarlo@googlemail.com
+
+# THANKS
+
+    Team of HTML5 Boilerplate & all affiliates (http://h5bp.com/)
+
+# TECHNOLOGY COLOPHON
+
+    Standards: HTML5, CSS3
+    Components: H5BP, Normalize.css
+    Software: Sublime Text 2, rake, less
