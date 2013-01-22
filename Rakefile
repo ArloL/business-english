@@ -2,6 +2,11 @@ require 'rubygems'
 require 'digest/md5'
 require 'rake/contrib/ftptools'
 
+# This file stores $ftp_login and $ftp_password which are used for uploading.
+if File.exist?('Rakefile.config')
+  load 'Rakefile.config'
+end
+
 task :default => [:lessc]
 
 desc 'Watch Less'
@@ -27,7 +32,7 @@ end
 task :upload => :lessc do
 	system('jekyll')
 	cd '_site' do
-  	Rake::FtpUploader.connect('/html/business-english', 'abenteuer-irland.de', 'web329', 'HlHHvtWX') do |ftp|
+  	Rake::FtpUploader.connect('/html/business-english', $ftp_server, $ftp_login, $ftp_password) do |ftp|
     	ftp.verbose = true # gives you some output
     	ftp.upload_files("./**/*")
       ftp.upload_files(".htaccess")
