@@ -14,4 +14,4 @@
 
     Standards: HTML5, CSS3
     Components: H5BP, Normalize.css
-    Software: Sublime Text 2, rake, less
+    Software: Sublime Text 2, jekyll, rake, less
