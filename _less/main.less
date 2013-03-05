@@ -48,8 +48,7 @@ textarea {
 
 body {
     font-family: "Palatino Linotype",Palatino,Palladio,"URW Palladio L","Book Antiqua",Baskerville,"Bookman Old Style","Bitstream Charter","Nimbus Roman No9 L",Garamond,"Apple Garamond","ITC Garamond Narrow","New Century Schoolbook","Century Schoolbook","Century Schoolbook L",Georgia,serif;
-    /* If standard font-size is 16px this makes it 20px. */
-    font-size: 1.25em;
+    font-size: 1em;
     line-height: @line-height;
 }
 
@@ -236,7 +235,7 @@ a, a:active, a:visited {
 .header,
 .footer,
 .article {
-    margin: 0 22% 0 11%;
+    margin: 0 1em 0 1em;
 }
 
 .article {
@@ -425,27 +424,18 @@ a, a:active, a:visited {
    Modify as content requires.
    ========================================================================== */
 
-/* <= 480 */
-@media only screen and (max-width: 480px) {
-    body {
-        font-size: 1em;
-    }
-
-    .header, .footer, .article {
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-}
-
 /* >= 481 */
 @media only screen and (min-width: 481px) {
+    body {
+        /* If standard font-size is 16px this makes it 20px. */
+        font-size: 1.25em;
+    }
 }
 
 /* >= 481 && <= 768 */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .header, .footer, .article {
-        margin-left: 2em;
-        margin-right: 2em;
+        margin: 0 2em 0 2em;
     }
 }
 
@@ -455,6 +445,9 @@ a, a:active, a:visited {
 
 /* >= 769 */
 @media only screen and (min-width: 769px) {
+    .header, .footer, .article {
+        margin: 0 22% 0 11%;
+    }
 }
 
 /* >= 769 && <= 980 */
