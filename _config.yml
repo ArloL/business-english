@@ -4,3 +4,4 @@ exclude: [Gemfile, Gemfile.lock, Rakefile, Rakefile.config, business-english.sub
 markdown: kramdown
 url: http://localhost
 baseurl: /~ArloLOK/business-english/
+language: de
