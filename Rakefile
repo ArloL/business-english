@@ -30,7 +30,7 @@ task :dev do
 end
 
 task :upload => :lessc do
-	system('jekyll')
+	system('jekyll --url http://business-english-bocholt.de --base-url /')
 	cd '_site' do
   	Rake::FtpUploader.connect('/html/business-english', $ftp_server, $ftp_login, $ftp_password) do |ftp|
     	ftp.verbose = true # gives you some output
