@@ -18,6 +18,9 @@
     <meta http-equiv="Content-Language" content="{{language}}" />
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="/css/ef868959f1646358abcac6d393506f6c.css">
+    {% if page.canonical %}
+    <link rel="canonical" href="{{site.url}}{{site.baseurl}}{{page.canonical}}" />
+    {% endif %}
 </head>
 
 <body class="{% if page.body_class %}{{ page.body_class }} {% endif %}light">
