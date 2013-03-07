@@ -10,7 +10,7 @@ end
 task :default => [:lessc]
 
 desc 'Watch Less'
-task :watch do
+task :watch => :lessc do
   system('when-changed _less/* -c rake lessc')
 end
 
