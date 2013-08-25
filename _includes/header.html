@@ -15,32 +15,35 @@
     {% if page.description %}
     <meta name="description" content="{{page.description}}">
     {% endif %}
-    <meta http-equiv="Content-Language" content="{{language}}" />
+    <meta http-equiv="Content-Language" content="{{language}}">
     <meta name="viewport" content="width=device-width">
     <base href="{{site.url}}{{site.baseurl}}">
     <link rel="stylesheet" href="css/ef868959f1646358abcac6d393506f6c.css">
     {% if page.canonical %}
-    <link rel="canonical" href="{{site.url}}{{site.baseurl}}{{page.canonical}}" />
+    <link rel="canonical" href="{{site.url}}{{site.baseurl}}{{page.canonical}}">
     {% endif %}
 </head>
 
 <body class="{% if page.body_class %}{{ page.body_class }} {% endif %}light">
 
-<!--[if lt IE 7]>
-    <p id="chromeframe" class="content">
-        Sie benutzen einen veralteten Webbrowser.
-        <a href="http://browsehappy.com/">Aktualisieren Sie Ihren Browser noch heute</a> oder
-        <a href="http://www.google.com/chromeframe/?redirect=true">installieren Sie
-        Google Chrome Frame</a>, um diese Website besser zu nutzen.
-    </p>
-<![endif]-->
-
-<div class="dark">
-    <div class="header content clearfix">
-        <img alt="" class="fl logo" height="48" width="48" src="img/logo.jpg" />
-        <h1>{{ site.title }}</h1>
-        <p class="content">
-            02871 3108999 | <a href="mailto:mok@business-english-bocholt.de">mok@business-english-bocholt.de</a> | <a href="impressum.html">Impressum</a>
+<div class="header">
+    <a id="logo" href="." title="Business English Bocholt"><img height="48" width="48" src="img/logo.jpg" /> Business English Bocholt</a>
+    <div id="telBox">
+        <p>
+            <a href="mailto:mok@abenteuer-irland.de">mok@abenteuer-irland.de</a><br />
+            +49 2871 3108999
         </p>
     </div>
+    <div id="language">
+        <p>
+        {% for language in site.languages %}
+            {% for translation in page.translations %}
+                {% if translation.language == language.short %}
+                    <a href="{{translation.link}}"><img width="{{language.flag_width}}" height="{{language.flag_height}}" src="img/{{language.flag}}" alt="{{language.name}}"></a>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+        </p>
+    </div>
+    {% include nav.html %}
 </div>
