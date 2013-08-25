@@ -1,30 +1,6 @@
 @import "elements.less";
 @import "normalize.less";
-
-@line-height: 1.5;
-@h1-font-size: 1.5;
-@h2-font-size: 1.3333;
-@h3-font-size: 1.1666;
-@h4-font-size: 1.1666;
-@h5-font-size: 1;
-@h6-font-size: 1;
-
-@base03:    #f18400;
-@base02:    #f19c36;
-@base01:    #586e75;
-@base00:    #657b83;
-@base0:     #FFF;
-@base1:     #FFF;
-@base2:     #eee8d5;
-@base3:     #fdf6e3;
-@yellow:    #b58900;
-@orange:    #cb4b16;
-@red:       #dc322f;
-@magenta:   #d33682;
-@violet:    #6c71c4;
-@blue:      #268bd2;
-@cyan:      #2aa198;
-@green:     #859900;
+@import "config.less";
 
 /*
  * HTML5 Boilerplate
@@ -60,14 +36,14 @@ body {
 
 ::-moz-selection {
     color: @base3;
-    text-shadow: none;
     background: @blue;
+    text-shadow: none;
 }
 
 ::selection {
     color: @base3;
-    text-shadow: none;
     background: @blue;
+    text-shadow: none;
 }
 
 /*
@@ -77,10 +53,10 @@ body {
 hr {
     display: block;
     height: 1px;
-    padding: 0;
-    margin: (0em + @line-height) 0;
     border: 0;
-    border-top: 1px solid;
+    border-top: 1px solid #ccc;
+    margin: (0em + @line-height) 0;
+    padding: 0;
 }
 
 /*
@@ -96,9 +72,9 @@ img {
  */
 
 fieldset {
-    padding: 0;
-    margin: 0;
     border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /*
@@ -130,203 +106,29 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/*
-    All the font-size, margin and line-height values are chosen to achieve a good
-    rhythm of the text. Rhythm of the text means that the vertical space is divided
-    into lines of the same height. This counts for lines of text as well as space
-    between text (e.g. the top and bottom margin of a header).
-
-    Example:
-    If the main text is set at 16px with a line-height of 1.5, each line occupies
-    24px of vertical space. This is the rhythm. If a h1-tag is set at 24px it only
-    needs a line-height of 1 to occupy the 24px.
-    All the margins should also be a multiple of 24px.
-*/
-
-h1 {
-    margin: (0em + @line-height / @h1-font-size) 0;
-    font-size: 0em + @h1-font-size;
-    line-height: @line-height / @h1-font-size;
-}
-
-h2 {
-    margin: (0em + @line-height / @h2-font-size) 0;
-    font-size: 0em + @h2-font-size;
-    line-height: @line-height / @h2-font-size;
-}
-
-h3 {
-    margin: (0em + @line-height / @h3-font-size) 0;
-    font-size: 0em + @h3-font-size;
-    line-height: @line-height / @h3-font-size;
-}
-
-h4 {
-    margin: (0em + @line-height / @h4-font-size) 0;
-    font-size: 0em + @h4-font-size;
-    font-style: italic;
-    line-height: @line-height / @h4-font-size;
-}
-
-h5 {
-    margin: (0em + @line-height / @h5-font-size) 0;
-    font-size: 0em + @h5-font-size;
-    line-height: @line-height / @h5-font-size;
-}
-
-h6 {
-    margin: (0em + @line-height / @h6-font-size) 0;
-    font-size: 0em + @h6-font-size;
-    font-style: italic;
-    line-height: @line-height / @h6-font-size;
-}
-
-p {
-    margin: (0em + @line-height) 0;
-}
-
-ol,
-ul {
-    padding: 0 0 0 (0em + @line-height);
-    margin: (0em + @line-height) 0;
-}
-
-ul ul,
-ul ol,
-ol ol,
-ol ul {
-	margin: 0;
-}
-
-a, a:active, a:visited {
-    color: @base01;
-}
-
-.nav {
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-
-        li {
-            display: inline-block;
-            *display: inline;
-            *zoom: 1;
-
-            a {
-                padding-bottom: 1.5em;
-                margin-right: 1.5em;
-            }
-        }
-    }
-}
-
-.content {
-    max-width: 33em;
-    min-width: 15em;
-
-    word-wrap: break-word;
-}
-
-.lt-ie7 .content {
-    width: 33em;
-}
-
-.header,
-.footer,
-.article {
-    margin: 0 1em 0 1em;
-}
-
-.article {
-    margin-bottom: 22%;
-}
-
-.lt-ie9 .header,
-.lt-ie9 .footer,
-.lt-ie9 .article {
-    padding: 0 (0em + @line-height);
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.rebase(@rebase03,@rebase02,@rebase01,@rebase00,@rebase0,@rebase1,@rebase2,@rebase3)
-{
-    color: @rebase0;
-    background-color: @rebase03;
-
-    hr {
-        border-top-color: @rebase0;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        color:@rebase1;
-    }
-
-    a,
-    a:active,
-    a:visited {
-        color: @rebase1;
-    }
-
-    a.btn {
-        color: @base3;
-        background-color: @blue;
-    }
-
-    a.btn:hover {
-        background-color: @orange;
-    }
-
-    .content {
-        background-color: @rebase03;
-    }
-}
-.light { .rebase(@base3,@base2,@base1,@base0,@base00,@base01,@base02,@base03) }
-.dark  { .rebase(@base03,@base02,@base01,@base00,@base0,@base1,@base2,@base3) }
-
-.logo {
-    margin: 1em 0.5em 1em 0;
-}
-
-.article img.fr {
-    margin: 0 0 0.5em 1em;
-}
+@import "custom.less";
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
-.fr {
-    float: right;
-}
-
-.fl {
-    float: left;
-}
 
 /*
  * Image replacement
  */
 
 .ir {
+    background-color: transparent;
+    border: 0;
     overflow: hidden;
     /* IE 6/7 fallback */
     *text-indent: -9999px;
-    background-color: transparent;
-    border: 0;
 }
 
 .ir:before {
+    content: "";
     display: block;
     width: 0;
     height: 150%;
-    content: "";
 }
 
 /*
@@ -343,14 +145,14 @@ a, a:active, a:visited {
  */
 
 .visuallyhidden {
-    position: absolute;
-    width: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
     height: 1px;
-    padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0 0 0 0);
-    border: 0;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
 /*
@@ -360,12 +162,12 @@ a, a:active, a:visited {
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    position: static;
-    width: auto;
+    clip: auto;
     height: auto;
     margin: 0;
     overflow: visible;
-    clip: auto;
+    position: static;
+    width: auto;
 }
 
 /*
@@ -390,8 +192,8 @@ a, a:active, a:visited {
 
 .clearfix:before,
 .clearfix:after {
-    display: table; /* 2 */
     content: " "; /* 1 */
+    display: table; /* 2 */
 }
 
 .clearfix:after {
@@ -408,22 +210,31 @@ a, a:active, a:visited {
 }
 
 /* ==========================================================================
-   Media Queries for Responsive Design.
-   These override the primary ('mobile first') styles.
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 30em) {
+@media only screen and (min-width: 42em) {
     body {
         /* If standard font-size is 16px this makes it 20px. */
         font-size: 1.25em;
     }
+}
 
+@media only screen and (min-width: 54em) {
     .header, .footer, .article {
-        margin: 0 2em 0 2em;
+        margin: 0 1em;
     }
 }
 
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 60em) {
+    .header, .footer, .article {
+        margin: 0 2em;
+    }
+}
+
+@media only screen and (min-width: 72em) {
     .header, .footer, .article {
         margin: 0 22% 0 11%;
     }
@@ -442,18 +253,10 @@ a, a:active, a:visited {
    ========================================================================== */
 
 @media print {
-    @page {
-        margin: 11% 22% 22% 11%;
-    }
-
-    @page :left {
-        margin: 11% 11% 22% 22%;
-    }
-
     * {
         background: transparent !important;
-        box-shadow: none !important;
         color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
         text-shadow: none !important;
     }
 
@@ -465,28 +268,15 @@ a, a:active, a:visited {
 
     a,
     a:visited {
-        text-decoration: none;
-    }
-
-    .lt-ie8 a,
-    .lt-ie8 a:visited {
-        *text-decoration: underline;
+        text-decoration: underline;
     }
 
     a[href]:after {
-        content: " [" attr(href) "]";
-    }
-
-    abbr[title] {
-        border: none;
+        content: " (" attr(href) ")";
     }
 
     abbr[title]:after {
-        content: " [" attr(title) "]";
-    }
-
-    .ir {
-        *text-indent: 0;
+        content: " (" attr(title) ")";
     }
 
     /*
@@ -501,6 +291,7 @@ a, a:active, a:visited {
 
     pre,
     blockquote {
+        border: 1px solid #999;
         page-break-inside: avoid;
     }
 
@@ -517,19 +308,23 @@ a, a:active, a:visited {
         max-width: 100% !important;
     }
 
+    @page {
+        margin: 11% 22% 22% 11%;
+    }
+
+    @page :left {
+        margin: 11% 11% 22% 22%;
+    }
+
     p,
     h2,
     h3 {
-        orphans: 2;
-        widows: 2;
+        orphans: 3;
+        widows: 3;
     }
 
-    h1,
     h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    h3 {
         page-break-after: avoid;
     }
 
