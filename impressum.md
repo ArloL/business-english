@@ -5,17 +5,12 @@ description: Impressum von Mary O'Keeffe's Business English Website.
 ---
 # Impressum
 
-Mary O'Keeffe
-
-Abenteuer Irland
-
-Osterstr. 55
-
-46397 Bocholt
-
-Telefon: +49 2871 3108999
-
-E-Mail: <mok@business-english-bocholt.de>
+Mary O'Keeffe  
+Abenteuer Irland  
+Wesemannstr. 19  
+46397 Bocholt  
+Telefon: +49 2871 3108999  
+E-Mail: <mok@business-english-bocholt.de>  
 
 ## Haftungsausschluss
 
