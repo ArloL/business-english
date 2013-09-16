@@ -7,7 +7,7 @@ translations:
  - language: en
    link: en/about-me
 ---
-<img class="floatright" width="180" height="200" src="img/mary-2.jpg">
+<img class="mary" width="180" height="200" src="img/mary.jpg">
 
 # Über mich
 
