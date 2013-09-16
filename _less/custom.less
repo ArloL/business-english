@@ -77,16 +77,28 @@ a, a:active, a:visited {
     background: @base03;
 }
 
-.lt-ie9 .header,
-.lt-ie9 .footer,
-.lt-ie9 .article {
-    padding: 0 (0em + @line-height);
-    margin-right: auto;
-    margin-left: auto;
+.content {
+    max-width: 33em;
+    min-width: 15em;
+
+    word-wrap: break-word;
 }
 
 .header {
     padding: 0.25em 0.5em;
+}
+
+.logo,
+.telBox {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo {
+    a {
+        color: #fff;
+        display: inline-block;
+    }
 }
 
 .nav {
@@ -114,74 +126,83 @@ a, a:active, a:visited {
     }
 }
 
-.content {
-    max-width: 33em;
-    min-width: 15em;
-
-    word-wrap: break-word;
-}
-
-.lt-ie7 .content {
-    width: 33em;
-}
-
-.header .logo {
-    display: inline-block;
-    vertical-align: top;
-    background-image: url(../img/logo-2.png);
-    background-size: 295px 50px;
-    width: 295px;
-    height: 50px;
-}
-
-#telBox {
+.telBox {
     display: inline-block;
     margin: 0.25em 0.25em 0.25em 1em;
     padding: 0.25em 1em;
     background-color: #eedb7d;
     font-size:0.75em;
-    .rounded(1em)
+    .rounded(1em);
+
+    p {
+        margin: 0;
+        font-size: 1.125em;
+        text-align: center;
+    }
 }
 
-#telBox p {
-    margin: 0;
-    font-size: 1.125em;
-    text-align: center;
-}
-
-#language {
+.language {
     display: inline-block;
     margin: 0.25em 0.25em 0.25em 1em;
     padding: 0;
+
+    p {
+        margin: 0;
+    }
 }
 
-#language p {
-    margin: 0;
-}
+.article  {
 
-.article .content {
-    background: #fff;
-    padding: 0.5em 1em;
-    margin: 0 1em;
-    .rounded(0.75em)
+    .content {
+        background: #fff;
+        padding: 0.5em 1em;
+        margin: 0 1em;
+        .rounded(0.75em)
+    }
+
+    .mary {
+        float: right; 
+        margin: 0 0 0.5em 1em;
+        width: 9em;
+        height: auto;
+        max-width: 180px;
+        max-height: 200px;
+    }
 }
 
 .footer {
     text-align: center;
+    .clearfix();
 }
 
-.article img.floatright {
-    margin: 0 0 0.5em 1em;
-    width: 9em;
-    height: auto;
-    max-width: 180px;
-    max-height: 200px;
+@media only screen and (min-width: 42em) {
+    body {
+        /* If standard font-size is 16px this makes it 20px. */
+        font-size: 1.25em;
+    }
 }
 
-.fr {
-    float: right;
+@media only screen and (min-width: 54em) {
+    .header, .footer, .article {
+        margin: 0 1em;
+    }
 }
 
-.fl {
-    float: left;
+@media only screen and (min-width: 60em) {
+    .header, .footer, .article {
+        margin: 0 2em;
+    }
+}
+
+@media only screen and (min-width: 72em) {
+    .header, .footer, .article {
+        margin: 0 22% 0 11%;
+    }
+}
+
+@media only screen and (min-width: 90em) {
+    body {
+        /* Increase font-size for really large displays. */
+        font-size: 1.5em;
+    }
 }
