@@ -24,14 +24,17 @@
 <body class="{% if page.body_class %}{{ page.body_class }}{% endif %}">
 
 <div class="header">
-    <a id="logo" href="." title="Business English Bocholt"><img height="48" width="48" src="img/logo.jpg" /> Business English Bocholt</a>
-    <div id="telBox">
+    <div class="logo">
+        <a href="." title="Business English Bocholt"><img height="60" width="60" src="img/logo.jpg" /></a>
+        <a href="." title="Business English Bocholt">Business English Bocholt</a>
+    </div>
+    <div class="telBox">
         <p>
             <a href="mailto:mok@abenteuer-irland.de">mok@abenteuer-irland.de</a><br />
             +49 2871 3108999
         </p>
     </div>
-    <div id="language">
+    <div class="language">
         <p>
         {% for language in site.languages %}
             {% for translation in page.translations %}
