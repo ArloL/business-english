@@ -5,7 +5,7 @@ canonical: kontakt
 ---
 # Kontakt
 
-Mary O´Keeffe  
+Mary O'Keeffe  
 Wesemannstr. 19  
 46397 Bocholt
 

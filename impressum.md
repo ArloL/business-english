@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Impressum
-description: Impressum von Mary O´Keeffe's Business English Website.
+description: Impressum von Mary O'Keeffe's Business English Website.
 ---
 # Impressum
 
-Mary O´Keeffe  
+Mary O'Keeffe  
 Abenteuer Irland  
 Wesemannstr. 19  
 46397 Bocholt  
