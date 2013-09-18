@@ -31,7 +31,9 @@ task :less do
   parser = Less::Parser.new :paths => '_less', :filename => '_less/main.less'
   tree = parser.parse(open('_less/main.less').gets(nil))
   css = tree.to_css(:compress => true)
-  open('css/intermediate.css', 'w').puts(css)
+  f = open('css/intermediate.css', 'w')
+  f.puts(css)
+  f.flush
 end
 
 desc 'Serve jekyll site and automatically compile less files'
@@ -54,6 +56,7 @@ def replace_stylesheet_links(new_name)
     content = content.gsub(/<link rel=\"stylesheet\" href=\"css\/.*\.css\">/, '<link rel="stylesheet" href="css/' + new_name + '">')
     open(arg, 'w'){ |file|
       file.puts(content)
+      file.flush
     }
   }
 end
