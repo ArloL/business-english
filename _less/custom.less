@@ -71,9 +71,7 @@ a, a:active, a:visited {
     color: @base01;
 }
 
-.header,
-.footer,
-.article {
+.body {
     background: @base03;
 }
 
@@ -85,80 +83,57 @@ a, a:active, a:visited {
 }
 
 .header {
-    padding: 0.5em 1em;
+    padding: 0 (0em + @line-height);
 }
 
 .logo,
 .telBox {
-    display: inline-block;
     vertical-align: middle;
 }
 
-.logo {
-    a {
-        color: #fff;
-        display: inline-block;
-    }
+a.logo {
+    display: inline-block;
+    margin: (@line-height / 2em) 0;
+    color: #fff;
+    text-decoration: none; 
+}
+
+.telBox {
+    display: none;
+    font-size: (@line-height / 2em);
+    padding: (@line-height / 3em);
+    margin: (@line-height / 2em) 0;
+    margin-left: 4em;
+    background-color: #eedb7d;
+    text-align: center;
+    .rounded(1em);
 }
 
 .nav {
-    margin-top: 0.5em;
+    list-style: none;
+    padding: 0;
+    margin: (0em + @line-height) / 2 0;
 
-    ul {
-        font-size: 0em + @nav-font-size;
-        line-height: @line-height / @nav-font-size;
-        list-style: none;
-        margin: 0;
-        padding: 0;
+    li {
+        display: inline;
 
-        li {
-            display: inline;
+        a {
+            padding: @line-height / 3em;
+            white-space: nowrap;
 
-            a {
-                padding: (0em + ((@line-height / @nav-font-size) - 1) / 2);
-                white-space: nowrap;
-
-                &:hover, &:focus {
-                    background: #f1ae5d;                   
-                }
+            &:hover, &:focus {
+                background: #f1ae5d;                   
             }
         }
     }
 }
 
-.telBox {
-    display: inline-block;
-    margin: 0.25em 0.25em 0.25em 1em;
-    padding: 0.25em 1em;
-    background-color: #eedb7d;
-    font-size:0.75em;
-    .rounded(1em);
-
-    p {
-        margin: 0;
-        font-size: 1.125em;
-        text-align: center;
-    }
-}
-
-.language {
-    display: inline-block;
-    margin: 0.25em 0.25em 0.25em 1em;
-    padding: 0;
-
-    p {
-        margin: 0;
-    }
-}
-
-.article  {
-
-    .content {
-        background: #fff;
-        padding: 0.5em 1em;
-        margin: 0 1em;
-        .rounded(0.75em)
-    }
+.article.content {
+    background: #fff;
+    padding: 0 (@line-height / 3em * 2);
+    margin: 0 (@line-height / 3em * 2);
+    .rounded(@line-height / 2em);
+    .clearfix();
 
     .mary {
         float: right; 
@@ -180,22 +155,26 @@ a, a:active, a:visited {
         /* If standard font-size is 16px this makes it 20px. */
         font-size: 1.25em;
     }
+
+    .telBox {
+        display: inline-block;
+    }
 }
 
 @media only screen and (min-width: 54em) {
-    .header, .footer, .article {
+    .body {
         margin: 0 1em;
     }
 }
 
 @media only screen and (min-width: 60em) {
-    .header, .footer, .article {
+    .body {
         margin: 0 2em;
     }
 }
 
 @media only screen and (min-width: 72em) {
-    .header, .footer, .article {
+    .body {
         margin: 0 22% 0 11%;
     }
 }
