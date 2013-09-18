@@ -53,17 +53,18 @@ p{margin:1.5em 0;}
 ol,ul{padding:0 0 0 1.5em;margin:1.5em 0;}
 ul ul,ul ol,ol ol,ol ul{margin:0;}
 a,a:active,a:visited{color:#222222;}
-.header,.footer,.article{background:#f18400;}
+.body{background:#f18400;}
 .content{max-width:33em;min-width:15em;word-wrap:break-word;}
-.header{padding:0.5em 1em;}
-.logo,.telBox{display:inline-block;vertical-align:middle;}
-.logo a{color:#fff;display:inline-block;}
-.nav{margin-top:0.5em;}.nav ul{font-size:0.8em;line-height:1.875;list-style:none;margin:0;padding:0;}.nav ul li{display:inline;}.nav ul li a{padding:0.4375em;white-space:nowrap;}.nav ul li a:hover,.nav ul li a:focus{background:#f1ae5d;}
-.telBox{display:inline-block;margin:0.25em 0.25em 0.25em 1em;padding:0.25em 1em;background-color:#eedb7d;font-size:0.75em;-webkit-border-radius:1em;-moz-border-radius:1em;border-radius:1em;}.telBox p{margin:0;font-size:1.125em;text-align:center;}
-.language{display:inline-block;margin:0.25em 0.25em 0.25em 1em;padding:0;}.language p{margin:0;}
-.article .content{background:#fff;padding:0.5em 1em;margin:0 1em;-webkit-border-radius:0.75em;-moz-border-radius:0.75em;border-radius:0.75em;}
-.article .mary{float:right;margin:0 0 0.5em 1em;width:9em;height:auto;max-width:180px;max-height:200px;}
+.header{padding:0 1.5em;}
+.logo,.telBox{vertical-align:middle;}
+a.logo{display:inline-block;margin:0.75em 0;color:#fff;text-decoration:none;}
+.telBox{display:none;font-size:0.75em;padding:0.5em;margin:0.75em 0;margin-left:4em;background-color:#eedb7d;text-align:center;-webkit-border-radius:1em;-moz-border-radius:1em;border-radius:1em;}
+.nav{list-style:none;padding:0;margin:0.75em 0;}.nav li{display:inline;}.nav li a{padding:0.5em;white-space:nowrap;}.nav li a:hover,.nav li a:focus{background:#f1ae5d;}
+.article.content{background:#fff;padding:0 1em;margin:0 1em;-webkit-border-radius:0.75em;-moz-border-radius:0.75em;border-radius:0.75em;}.article.content:before,.article.content:after{content:" ";display:table;}
+.article.content:after{clear:both;}
+.article.content{*zoom:1;}
+.article.content .mary{float:right;margin:0 0 0.5em 1em;width:9em;height:auto;max-width:180px;max-height:200px;}
 .footer{text-align:center;}.footer:before,.footer:after{content:" ";display:table;}
 .footer:after{clear:both;}
 .footer{*zoom:1;}
-@media only screen and (min-width:42em){body{font-size:1.25em;}}@media only screen and (min-width:54em){.header,.footer,.article{margin:0 1em;}}@media only screen and (min-width:60em){.header,.footer,.article{margin:0 2em;}}@media only screen and (min-width:72em){.header,.footer,.article{margin:0 22% 0 11%;}}@media only screen and (min-width:90em){body{font-size:1.5em;}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important;} body{font-size:12pt;margin:0;max-width:none;} a,a:visited{text-decoration:underline;} a[href]:after{content:" (" attr(href) ")";} abbr[title]:after{content:" (" attr(title) ")";} .ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:"";} pre,blockquote{border:1px solid #999;page-break-inside:avoid;} thead{display:table-header-group;} tr,img{page-break-inside:avoid;} img{max-width:100% !important;} @page {margin:11% 22% 22% 11%;}@page :left{margin:11% 11% 22% 22%;}p,h2,h3{orphans:3;widows:3;} h2,h3{page-break-after:avoid;} .header,.footer{display:none;} .article{margin:0;}}
+@media only screen and (min-width:42em){body{font-size:1.25em;} .telBox{display:inline-block;}}@media only screen and (min-width:54em){.body{margin:0 1em;}}@media only screen and (min-width:60em){.body{margin:0 2em;}}@media only screen and (min-width:72em){.body{margin:0 22% 0 11%;}}@media only screen and (min-width:90em){body{font-size:1.5em;}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important;} body{font-size:12pt;margin:0;max-width:none;} a,a:visited{text-decoration:underline;} a[href]:after{content:" (" attr(href) ")";} abbr[title]:after{content:" (" attr(title) ")";} .ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:"";} pre,blockquote{border:1px solid #999;page-break-inside:avoid;} thead{display:table-header-group;} tr,img{page-break-inside:avoid;} img{max-width:100% !important;} @page {margin:11% 22% 22% 11%;}@page :left{margin:11% 11% 22% 22%;}p,h2,h3{orphans:3;widows:3;} h2,h3{page-break-after:avoid;} .header,.footer{display:none;} .article{margin:0;}}
