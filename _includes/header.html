@@ -34,16 +34,5 @@
             +49 2871 3108999
         </p>
     </div>
-    <div class="language">
-        <p>
-        {% for language in site.languages %}
-            {% for translation in page.translations %}
-                {% if translation.language == language.short %}
-                    <a href="{{translation.link}}"><img width="{{language.flag_width}}" height="{{language.flag_height}}" src="img/{{language.flag}}" alt="{{language.name}}"></a>
-                {% endif %}
-            {% endfor %}
-        {% endfor %}
-        </p>
-    </div>
-    {% include nav.html %}
+{% include nav.html %}
 </div>
