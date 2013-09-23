@@ -45,7 +45,7 @@ task :serve do
     Rake::Task['dev_less'].invoke
   }
   dw.start
-  Jekyll::Commands::Build.process(Jekyll.configuration({::config => '_config.dev.yml', serving => true, :watch => true}))
+  Jekyll::Commands::Build.process(Jekyll.configuration({:config => '_config.dev.yml', :serving => true, :watch => true}))
   Jekyll::Commands::Serve.process(Jekyll.configuration({}))
 end
 
