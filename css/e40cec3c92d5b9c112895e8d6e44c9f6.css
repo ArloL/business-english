@@ -37,8 +37,8 @@ textarea{overflow:auto;vertical-align:top;}
 table{border-collapse:collapse;border-spacing:0}
 html,button,input,select,textarea{color:#222}
 body{font-family:"Palatino Linotype",Palatino,Palladio,"URW Palladio L","Book Antiqua",Baskerville,"Bookman Old Style","Bitstream Charter","Nimbus Roman No9 L",Garamond,"Apple Garamond","ITC Garamond Narrow","New Century Schoolbook","Century Schoolbook","Century Schoolbook L",Georgia,serif;font-size:1em;line-height:1.5}
-::-moz-selection{color:#fdf6e3;background:#268bd2;text-shadow:none}
-::selection{color:#fdf6e3;background:#268bd2;text-shadow:none}
+::-moz-selection{color:#fff;background:#268bd2;text-shadow:none}
+::selection{color:#fff;background:#268bd2;text-shadow:none}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1.5em 0;padding:0}
 img{vertical-align:middle}
 fieldset{border:0;margin:0;padding:0}
@@ -53,15 +53,15 @@ p{margin:1.5em 0}
 ol,ul{padding:0 0 0 1.5em;margin:1.5em 0}
 ul ul,ul ol,ol ol,ol ul{margin:0}
 a,a:active,a:visited{color:#222}
-.body{background:#f18400}
-.header{padding:0 1.5em}
+.body{background-color:#f18400}
+.header{margin:0 1em}
 a.logo{font-size:1.25em;display:inline-block;vertical-align:middle;margin:.6em 0;color:#fff;text-decoration:none}
-.telBox{display:none;vertical-align:middle;font-size:.75em;padding:.5em;margin:1em 0;margin-left:4em;background-color:#eedb7d;text-align:center;-webkit-border-radius:1em;-moz-border-radius:1em;border-radius:1em}
-.nav{list-style:none;padding:0;margin:.75em 0}.nav li{display:inline-block}.nav li a{padding:.25em .5em;white-space:nowrap}.nav li a:hover,.nav li a:focus{background:#f1ae5d}
-.article{max-width:33em;min-width:15em;word-wrap:break-word;background:#fff;padding:0 1em;margin:0 1em;-webkit-border-radius:.75em;-moz-border-radius:.75em;border-radius:.75em;}.article:before,.article:after{content:" ";display:table;}
+.telBox{display:none;vertical-align:middle;font-size:0.8em;padding:0.375em;margin:0.9375em 0;margin-left:4em;background-color:#f1ae5d;text-align:center;-webkit-border-radius:1em;-moz-border-radius:1em;border-radius:1em}.telBox p{margin:0}
+.nav{list-style:none;padding:0;margin:.75em 0}.nav li{display:inline-block}.nav li a{padding:.25em .5em;white-space:nowrap}.nav li a:hover,.nav li a:focus{background-color:#f1ae5d}
+.article{max-width:33em;min-width:15em;word-wrap:break-word;background-color:#fff;padding:0 .75em;margin:0 .75em;-webkit-border-radius:.75em;-moz-border-radius:.75em;border-radius:.75em;}.article:before,.article:after{content:" ";display:table;}
 .article:after{clear:both}
 .article{*zoom:1}
-.article .mary{float:right;margin:1.5em 0 0.5em 1em;width:9em;height:auto;max-width:180px;max-height:200px}
+.article .mary{float:right;margin:1.5em 0 0.5em 0.75em;width:9em;height:auto;max-width:180px;max-height:200px}
 .footer{text-align:center;}.footer:before,.footer:after{content:" ";display:table;}
 .footer:after{clear:both}
 .footer{*zoom:1}
