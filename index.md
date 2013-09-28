@@ -8,7 +8,7 @@ description: Mary O'Keeffe unterrichtet Business English im Umkreis Bocholt.
 
 # Hallo,
 
-Mein Name ist Mary O'Keeffe und ich unterrichte Business English für Unternehmen im Umkreis von Bocholt.
+mein Name ist Mary O'Keeffe und ich unterrichte Business English für Unternehmen im Umkreis von Bocholt.
 
 Im Berufsalltag sind Englisch-Kenntnisse heutzutage unentbehrlich. Oft fehlt aber das fachspezifische Vokabular oder einfach die Sicherheit beim Sprechen.
 
