@@ -4,7 +4,7 @@ title: Business English in und um Bocholt
 no_title_expansion: true
 description: Mary O'Keeffe unterrichtet Business English im Umkreis Bocholt.
 ---
-<img class="mary" width="180" height="200" src="img/mary.jpg">
+<img class="mary" width="180" height="200" src="img/mary.jpg" alt="">
 
 # Hallo,
 
