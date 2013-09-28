@@ -57,7 +57,7 @@ a,a:active,a:visited{color:#222}
 .body{background-color:#f18400}
 .header{margin:0 1em}
 a.logo{font-size:1.25em;display:inline-block;vertical-align:middle;margin:.6em 0;color:#fff;text-decoration:none}
-.telBox{display:none;vertical-align:middle;font-size:0.8em;padding:0.375em;margin:0.9375em 0;margin-left:4em;background-color:#f1ae5d;text-align:center;-webkit-border-radius:1em;-moz-border-radius:1em;border-radius:1em}.telBox p{margin:0}
+.telBox{display:none;vertical-align:middle;font-size:0.8em;padding:0.375em 0.625em;margin:0.9375em 0;margin-left:4em;background-color:#f1ae5d;text-align:center;-webkit-border-radius:1em;-moz-border-radius:1em;border-radius:1em}.telBox p{margin:0}
 .nav{list-style:none;padding:0;margin:.75em 0}.nav li{display:inline-block}.nav li a{padding:.25em .5em;white-space:nowrap}.nav li a:hover,.nav li a:focus{background-color:#f1ae5d}
 .article{max-width:33em;min-width:15em;word-wrap:break-word;background-color:#fff;padding:0 .75em;margin:0 .75em;-webkit-border-radius:.75em;-moz-border-radius:.75em;border-radius:.75em;}.article:before,.article:after{content:" ";display:table;}
 .article:after{clear:both}
