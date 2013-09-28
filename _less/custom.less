@@ -67,11 +67,11 @@ ol ul {
 }
 
 a, a:active, a:visited {
-    color: @base01;
+    color: @a-color;
 }
 
 .body {
-    background: @base03;
+    background-color: @body-background;
 }
 
 .header {
@@ -83,7 +83,7 @@ a.logo {
     display: inline-block;
     vertical-align: middle;
     margin: (@line-height / 2.5em) 0;
-    color: #fff;
+    color: @logo-color;
     text-decoration: none; 
 }
 
@@ -94,7 +94,7 @@ a.logo {
     padding: 0.375em;
     margin: 0.9375em 0;
     margin-left: 4em;
-    background-color: #eedb7d;
+    background-color: @telBox-background;
     text-align: center;
     .rounded(1em);
 
@@ -116,7 +116,7 @@ a.logo {
             white-space: nowrap;
 
             &:hover, &:focus {
-                background: #f1ae5d;                   
+                background: @nav-hover-background;
             }
         }
     }
