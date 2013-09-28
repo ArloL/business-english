@@ -1,3 +1,6 @@
+---
+layout: nil
+---
 # Apache configuration file
 # httpd.apache.org/docs/2.2/mod/quickreference.html
 
@@ -336,7 +339,7 @@ FileETag None
 # Options +FollowSymlinks
 # Options +SymLinksIfOwnerMatch
   RewriteEngine On
-# RewriteBase /
+  RewriteBase {{site.baseurl}}
 </IfModule>
 
 
@@ -411,6 +414,22 @@ FileETag None
 #   RewriteCond %{SERVER_PORT} !^443
 #   RewriteRule ^ https://example-domain-please-change-me.com%{REQUEST_URI} [R=301,L]
 # </IfModule>
+
+
+# ----------------------------------------------------------------------
+# Redirect non-existing files and directories to index.php
+# ----------------------------------------------------------------------
+
+# This is used for the custom CMS by Arlo O'Keeffe.
+
+<IfModule mod_rewrite.c>
+  RewriteCond   %{REQUEST_FILENAME}.html       -f
+  RewriteRule   ^(.*)$    $1.html              [QSA,L]
+
+  RewriteCond   %{REQUEST_FILENAME}            !-f
+  RewriteCond   %{REQUEST_FILENAME}            !-d
+  RewriteRule   ^(.*)$    redirect.php?path=$1 [QSA]
+</IfModule>
 
 
 # ----------------------------------------------------------------------
