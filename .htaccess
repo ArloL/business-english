@@ -256,6 +256,9 @@ AddDefaultCharset utf-8
 # This is used for the custom CMS by Arlo O'Keeffe.
 
 <IfModule mod_rewrite.c>
+    RewriteCond   %{REQUEST_FILENAME}.html       -f
+    RewriteRule   ^(.*)$    $1.html              [QSA,L]
+
     RewriteCond   %{REQUEST_FILENAME}            !-f
     RewriteCond   %{REQUEST_FILENAME}            !-d
     RewriteRule   ^(.*)$    redirect.php?path=$1 [QSA]
