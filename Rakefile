@@ -37,8 +37,8 @@ task :less do
 end
 
 desc 'Serve jekyll site and automatically compile less files'
-task :serve do
-  dw = DirectoryWatcher.new '_less', :glob => '*.less', :interval => 1
+task :serve => :dev_less do
+  dw = DirectoryWatcher.new '_less', :glob => '*.less', :pre_load => true, :interval => 1
   dw.add_observer {
     Rake::Task['less'].reenable
     Rake::Task['dev_less'].reenable
