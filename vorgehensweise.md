@@ -2,12 +2,11 @@
 layout: default
 title: Vorgehensweise
 canonical: vorgehensweise
+description: Eine Beschreibung der Vorgehensweise mit der Mary O'Keeffe Business Englisch unterrichtet.
 ---
 # Vorgehensweise
 
-Dies ist die allgemeine Vorgehensweise für regelmäßige Kurse bei einer Firma vor Ort.
-
-So einfach gehts:
+Dies ist die allgemeine Vorgehensweise - egal ob für regelmäßige Kurse, Wochenendseminare, etc.:
 
 *   Bedarf feststellen
 *   Einstufungstest
@@ -33,9 +32,11 @@ Zudem suchen wir uns gemeinsam die wichtigsten [Aktivitäten und Bereiche](berei
 
 #### Kurse
 
-Anschließend führen wir regelmäßig (1-2x wöchentlich; 45 - 90 Minuten) die Kurse bei Ihnen vor Ort durch, um den Mitarbeitern die Teilnahme zu erleichtern.
+Anschließend führen wir je nach Bedarf den Unterricht durch.
 
-Wieviele Wochen legen wir vorher gemeinsam fest. Termine können natürlich nach Absprache von mind. 24h vorher auch verlegt oder ausgelassen werden.
+Das kann regelmäßig (1-2x wöchentlich; 45 - 90 Minuten) bei Ihnen vor Ort sein, um den Mitarbeitern die Teilnahme zu erleichtern.
+
+Oder ein Wochenendseminar, in dem wir uns auf eine [Aktivität oder einen Bereich](bereiche/) konzentrieren.
 
 #### Eigenarbeit
 
