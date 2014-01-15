@@ -17,6 +17,6 @@ Eine E-Mail ist schnell geschrieben. Auf Englisch wird es dann schon etwas schwi
 
 Das Ziel ist es *Ihnen* das Schreiben von E-Mails auf Englisch zu erleichtern.
 
-Dieses Training beinhaltet unterschiedliche Aspekte des Verfassens von Emails, vielfältige realistische Übungen sowie wichtige Redewendungen und Wörter. Situationen aus Ihrem Arbeitsleben können ins Training mit integriert werden, so werden Sie möglichst effektiv vorbereitet.
+Dieses Training beinhaltet unterschiedliche Aspekte des Verfassens von Emails, vielfältige realistische Übungen sowie wichtige Redewendungen und Wörter. Situationen aus Ihrem Arbeitsleben können ins Training mit integriert werden. So werden Sie möglichst effektiv vorbereitet.
 
 Dieses Training kann in Seminarform oder als wöchentlicher Kurs durchgeführt werden.

@@ -2,6 +2,7 @@
 layout: default
 title: Bereiche
 canonical: bereiche/
+description: Die Bereiche in denen Mary O'Keeffe Englisch unterrichtet.
 ---
 # Bereiche
 
