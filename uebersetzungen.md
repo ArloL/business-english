@@ -2,6 +2,7 @@
 layout: default
 title: Übersetzungen
 canonical: uebersetzungen
+description: Deutsch -> Englisch Übersetzungen von Mary O'Keeffe.
 ---
 # Übersetzungen Deutsch -> Englisch
 
