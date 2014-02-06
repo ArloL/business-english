@@ -14,6 +14,6 @@ Im Berufsalltag ist Englisch heute Vorrausetzung. Leider rostet das Wissen ein o
 
 Gemeinsam werden wir das verbessern.
 
-Schauen Sie sich meine [Vorgehensweise](vorgehensweise) an oder die verschiedenen [Bereiche](bereiche) in denen ich unterrichte.
+Schauen Sie sich meine [Vorgehensweise](vorgehensweise) an oder die verschiedenen [Bereiche](bereiche) in denen ich unterrichte. Ich bin ausgebildete [telc](ttp://www.telc.net/) Prüferin der höchsten Stufe (C2).
 
 Wenn Sie Interesse haben, [kontaktieren](kontakt) Sie mich einfach.

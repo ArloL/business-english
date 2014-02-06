@@ -20,8 +20,6 @@ Diesen Schritt haben Sie bereits gemeistert. Wenn Sie sich aber noch nicht siche
 
 #### Einstufungstest
 
-[So sieht ein Beispiel aus.](downloads/einstufungstest.pdf)
-
 In einem solchen kurzen Test erlangen wir eine objektive Einschätzung der Fähigkeiten der Gruppe. Daraus lässt sich nicht nur der Bedarf endgültig feststellen, sondern auch ob man eventuell die Gruppe entsprechend der Fähigkeiten aufteilen sollte.
 
 #### Erarbeiten des Lehrplans
