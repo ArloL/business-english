@@ -1,11 +1,11 @@
-@import "elements.less";
-@import "helper.less";
-@import "normalize.less";
-@import "config.less";
+@import "elements";
+@import "helper";
+@import "normalize";
+@import "config";
+
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
 /*
- * HTML5 Boilerplate
- *
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
@@ -20,13 +20,13 @@ button,
 input,
 select,
 textarea {
-    color: @base-color;
+    color: $base-color;
 }
 
 body {
     font-family: "Palatino Linotype",Palatino,Palladio,"URW Palladio L","Book Antiqua",Baskerville,"Bookman Old Style","Bitstream Charter","Nimbus Roman No9 L",Garamond,"Apple Garamond","ITC Garamond Narrow","New Century Schoolbook","Century Schoolbook","Century Schoolbook L",Georgia,serif;
     font-size: 1em;
-    line-height: @line-height;
+    line-height: $line-height;
 }
 
 /*
@@ -36,14 +36,14 @@ body {
  */
 
 ::-moz-selection {
-    color: @selection-color;
-    background: @selection-background;
+    color: $selection-color;
+    background: $selection-background;
     text-shadow: none;
 }
 
 ::selection {
-    color: @selection-color;
-    background: @selection-background;
+    color: $selection-color;
+    background: $selection-background;
     text-shadow: none;
 }
 
@@ -56,7 +56,7 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
-    margin: (0em + @line-height) 0;
+    margin: (0em + $line-height) 0;
     padding: 0;
 }
 
@@ -94,7 +94,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-@import "custom.less";
+@import "custom";
 
 /* ==========================================================================
    Print styles.

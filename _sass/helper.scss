@@ -2,7 +2,7 @@
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
 
-.hidden() {
+@mixin hidden() {
     display: none !important;
     visibility: hidden;
 }
@@ -11,7 +11,7 @@
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
 
-.visuallyhidden() {
+@mixin visuallyhidden() {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -41,7 +41,7 @@
  * Hide visually and from screenreaders, but maintain layout
  */
 
-.invisible() {
+@mixin invisible() {
     visibility: hidden;
 }
 
@@ -57,7 +57,7 @@
  *    `:before` to contain the top-margins of child elements.
  */
 
- .clearfix() {
+ @mixin clearfix() {
 
     &:before,
     &:after {

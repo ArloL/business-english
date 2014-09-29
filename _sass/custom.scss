@@ -12,51 +12,51 @@
 */
 
 h1 {
-    margin: (0em + @line-height / @h1-font-size) 0;
-    font-size: (0em + @h1-font-size);
-    line-height: (@line-height / @h1-font-size);
+    margin: (0em + $line-height / $h1-font-size) 0;
+    font-size: (0em + $h1-font-size);
+    line-height: $line-height / $h1-font-size;
 }
 
 h2 {
-    margin: (0em + @line-height / @h2-font-size) 0;
-    font-size: (0em + @h2-font-size);
-    line-height: @line-height / @h2-font-size;
+    margin: (0em + $line-height / $h2-font-size) 0;
+    font-size: (0em + $h2-font-size);
+    line-height: $line-height / $h2-font-size;
 }
 
 h3 {
-    margin: (0em + @line-height / @h3-font-size) 0;
-    font-size: (0em + @h3-font-size);
-    line-height: @line-height / @h3-font-size;
+    margin: (0em + $line-height / $h3-font-size) 0;
+    font-size: (0em + $h3-font-size);
+    line-height: $line-height / $h3-font-size;
 }
 
 h4 {
-    margin: (0em + @line-height / @h4-font-size) 0;
-    font-size: (0em + @h4-font-size);
+    margin: (0em + $line-height / $h4-font-size) 0;
+    font-size: (0em + $h4-font-size);
     font-style: italic;
-    line-height: (@line-height / @h4-font-size);
+    line-height: ($line-height / $h4-font-size);
 }
 
 h5 {
-    margin: (0em + @line-height / @h5-font-size) 0;
-    font-size: (0em + @h5-font-size);
-    line-height: (@line-height / @h5-font-size);
+    margin: (0em + $line-height / $h5-font-size) 0;
+    font-size: (0em + $h5-font-size);
+    line-height: ($line-height / $h5-font-size);
 }
 
 h6 {
-    margin: (0em + @line-height / @h6-font-size) 0;
-    font-size: (0em + @h6-font-size);
+    margin: (0em + $line-height / $h6-font-size) 0;
+    font-size: (0em + $h6-font-size);
     font-style: italic;
-    line-height: (@line-height / @h6-font-size);
+    line-height: ($line-height / $h6-font-size);
 }
 
 p {
-    margin: (0em + @line-height) 0;
+    margin: (0em + $line-height) 0;
 }
 
 ol,
 ul {
-    padding: 0 0 0 (0em + @line-height);
-    margin: (0em + @line-height) 0;
+    padding: 0 0 0 (0em + $line-height);
+    margin: (0em + $line-height) 0;
 }
 
 ul ul,
@@ -67,23 +67,23 @@ ol ul {
 }
 
 a, a:active, a:visited {
-    color: @a-color;
+    color: $a-color;
 }
 
 .body {
-    background-color: @body-background;
+    background-color: $body-background;
 }
 
 .header {
-    margin: 0 (@line-height / 1.5em);
+    margin: 0 (0em + $line-height / 1.5);
 }
 
 a.logo {
     font-size: 1.25em;
     display: inline-block;
     vertical-align: middle;
-    margin: (@line-height / 2.5em) 0;
-    color: @logo-color;
+    margin: (0em + $line-height / 2.5) 0;
+    color: $logo-color;
     text-decoration: none;
 }
 
@@ -94,29 +94,36 @@ a.logo {
     padding: 0.375em 0.625em;
     margin: 0.9375em 0;
     margin-left: 4em;
-    background-color: @telBox-background;
+    background-color: $telBox-background;
     text-align: center;
-    .rounded(1em);
+    @include rounded(1em);
 
     p {
         margin: 0;
     }
 }
 
+.language {
+    display: inline-block;
+    margin: (0em + $line-height) 0;
+    margin-left: 1em;
+    vertical-align: bottom;
+}
+
 .nav {
     list-style: none;
     padding: 0;
-    margin: (@line-height / 2em) 0;
+    margin: (0em + $line-height / 2) 0;
 
     li {
         display: inline-block;
 
         a {
-            padding: (@line-height / 6em) (@line-height / 3em);
+            padding: (0em + $line-height / 6) (0em + $line-height / 3);
             white-space: nowrap;
 
             &:hover, &:focus {
-                background-color: @nav-hover-background;
+                background-color: $nav-hover-background;
             }
         }
     }
@@ -128,15 +135,15 @@ a.logo {
 
     word-wrap: break-word;
 
-    background-color: @article-background;
-    padding: 0 (@line-height / 2em);
-    margin: 0 (@line-height / 2em);
-    .rounded(@line-height / 2em);
-    .clearfix();
+    background-color: $article-background;
+    padding: 0 (0em + $line-height / 2);
+    margin: 0 (0em + $line-height / 2);
+    @include rounded(0em + $line-height / 2);
+    @include clearfix;
 
     .mary {
-        float: right; 
-        margin: 1.5em 0 0.5em 0.75em;
+        float: right;
+        margin: 0 0 0.5em 0.75em;
         width: 9em;
         height: auto;
         max-width: 180px;
@@ -146,7 +153,7 @@ a.logo {
 
 .footer {
     text-align: center;
-    .clearfix();
+    @include clearfix;
 }
 
 @media only screen and (min-width: 42em) {
