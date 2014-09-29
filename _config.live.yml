@@ -4,3 +4,5 @@ exclude: [Gemfile, Gemfile.lock, Rakefile, Rakefile.config, business-english.sub
 url: http://business-english-bocholt.de
 baseurl: /
 language: de
+sass:
+    style: compressed
