@@ -2,6 +2,7 @@
 layout: default
 title: Kontakt
 canonical: kontakt
+description: Kontaktdaten von Mary O`Keeffe
 ---
 # Kontakt
 
