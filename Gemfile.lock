@@ -213,6 +213,8 @@ GEM
       forwardable-extended (~> 2.6)
     public_suffix (3.1.1)
     rake (13.0.1)
+    rake-contrib (1.0.0)
+      rake
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -245,6 +247,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   rake
+  rake-contrib
 
 BUNDLED WITH
    2.1.4
