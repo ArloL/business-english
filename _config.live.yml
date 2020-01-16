@@ -1,7 +1,7 @@
 title:  "Business English in Bocholt"
 description: "Mary O'Keeffe unterrichtet Business English im Umkreis Bocholt."
 exclude: [Gemfile, Gemfile.lock, Rakefile, Rakefile.config, business-english.sublime-project, business-english.sublime-workspace]
-url: http://business-english-bocholt.de
+url: https://business-english-bocholt.de
 baseurl: /
 language: de
 sass:
