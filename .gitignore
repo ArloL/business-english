@@ -9,3 +9,4 @@ _site
 
 Rakefile.config
 .sass-cache/
+.project
