@@ -1,12 +1,11 @@
-# ${PROJECT}
+# business-english
 
-Short description
+This is the source of https://business-english-bocholt.de/
 
 # Quickstart
 
-`./call-some-command --with-some-options`
-
-# Install
-
-`./install`
-
+```
+gem install bundler
+bundle install
+bundle exec jekyll serve
+```
