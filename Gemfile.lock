@@ -221,7 +221,7 @@ GEM
       forwardable-extended (~> 2.6)
     public_suffix (4.0.7)
     racc (1.6.2)
-    rake (13.0.6)
+    rake (13.1.0)
     rake-contrib (1.0.0)
       rake
     rb-fsevent (0.11.2)
@@ -258,7 +258,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (= 228)
-  rake (= 13.0.6)
+  rake (= 13.1.0)
   rake-contrib (= 1.0.0)
 
 BUNDLED WITH
