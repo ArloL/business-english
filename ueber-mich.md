@@ -4,7 +4,7 @@ title: Über mich
 canonical: ueber-mich
 description: Ein kurzer Lebenslauf von Mary O'Keeffe.
 ---
-<img class="mary" width="180" height="200" src="img/mary.jpg" alt="">
+<img class="mary" width="180" height="200" src="img/mary-2.jpg" alt="">
 
 # Über mich
 
