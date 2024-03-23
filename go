@@ -16,4 +16,4 @@ gem list -i bundler || gem install bundler
 
 bundle install
 
-bundle exec jekyll serve --port 51695
+bundle exec jekyll serve --port 59512
