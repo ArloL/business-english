@@ -3,8 +3,9 @@
 @import "normalize";
 @import "config";
 
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
 
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -30,8 +31,9 @@ body {
 }
 
 /*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
  * Customize the background color to match your design.
  */
 
@@ -61,13 +63,16 @@ hr {
 }
 
 /*
- * Remove the gap between images, videos, audio and canvas and the bottom of
- * their containers: h5bp.com/i/440
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
 audio,
 canvas,
+iframe,
 img,
+svg,
 video {
     vertical-align: middle;
 }
@@ -102,17 +107,15 @@ textarea {
    ========================================================================== */
 
 @media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
+
+    *,
+    *::before,
+    *::after {
+        background: #fff !important;
+        color: #000 !important;
+        /* Black prints faster */
         box-shadow: none !important;
         text-shadow: none !important;
-    }
-
-    body {
-        font-size: 12pt;
-        margin: 0;
-        max-width: none;
     }
 
     a,
@@ -120,32 +123,31 @@ textarea {
         text-decoration: underline;
     }
 
-    a[href]:after {
+    a[href]::after {
         content: " (" attr(href) ")";
     }
 
-    abbr[title]:after {
+    abbr[title]::after {
         content: " (" attr(title) ")";
     }
 
     /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
+        * Don't show links that are fragment identifiers,
+        * or use the `javascript:` pseudo protocol
+        */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
         content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
     }
 
     pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
     }
 
     tr,
