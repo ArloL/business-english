@@ -1,0 +1,3 @@
+$ftp_server='example.org'
+$ftp_login='username'
+$ftp_password='password'
