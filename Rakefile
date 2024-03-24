@@ -8,14 +8,6 @@ if File.exist?('Rakefile.config')
   load 'Rakefile.config'
 end
 
-task :default => [:serve]
-
-desc 'Serve jekyll site'
-task :serve do
-  Jekyll::Commands::Build.process(Jekyll.configuration({:config => '_config.dev.yml', :serving => true, :watch => true}))
-  Jekyll::Commands::Serve.process(Jekyll.configuration({:config => '_config.dev.yml', :serving => true, :watch => true}))
-end
-
 desc 'Upload the website to the live server'
 task :upload do
   Jekyll::Commands::Build.process(Jekyll.configuration({:config => '_config.live.yml'}))
