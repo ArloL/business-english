@@ -19,4 +19,4 @@ $ftp_login='username'
 $ftp_password='password'
 ```
 
-and call `rake beta` and finally `rake live`.
+and call `rake beta` and finally `rake upload`.
