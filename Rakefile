@@ -8,6 +8,18 @@ if File.exist?('Rakefile.config')
   load 'Rakefile.config'
 end
 
+desc 'Upload the website to the beta server'
+task :beta do
+  Jekyll::Commands::Build.process(Jekyll.configuration({:config => '_config.beta.yml'}))
+  cd '_site' do
+    Rake::FtpUploader.connect('/html/beta.business-english-bocholt.de', $ftp_server, $ftp_login, $ftp_password) do |ftp|
+      ftp.verbose = true # gives you some output
+      ftp.upload_files("./**/*")
+      ftp.upload_files(".htaccess")
+    end
+  end
+end
+
 desc 'Upload the website to the live server'
 task :upload do
   Jekyll::Commands::Build.process(Jekyll.configuration({:config => '_config.live.yml'}))
