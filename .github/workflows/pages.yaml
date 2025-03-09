@@ -13,11 +13,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
     - name: Checkout
       uses: actions/checkout@v4.2.2
@@ -36,6 +33,16 @@ jobs:
       run: bundle exec jekyll build --baseurl "${BASEURL}"
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3.0.1
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    steps:
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4.0.5
