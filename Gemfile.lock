@@ -60,7 +60,7 @@ GEM
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (6.0.1)
-    rake (13.3.0)
+    rake (13.3.1)
     rake-contrib (1.0.0)
       rake
     rb-fsevent (0.11.2)
@@ -84,7 +84,7 @@ DEPENDENCIES
   jekyll (~> 4.4)
   jekyll-seo-tag (~> 2.8)
   jekyll-sitemap (~> 1.4)
-  rake (= 13.3.0)
+  rake (= 13.3.1)
   rake-contrib (= 1.0.0)
 
 BUNDLED WITH
